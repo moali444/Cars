@@ -1,0 +1,63 @@
+/** ====================
+ *  Responsive
+=======================*/
+@media screen and (max-width: 991px) {
+    .header-menu .sign-up-btn{
+        width: fit-content;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .banner-section .content-bx .car-img{
+        display: none;
+    }
+    .banner-section .content-bx .text{
+        max-width: 100%;
+        padding-inline-end: 0;
+    }
+    .banner-section .content-bx{
+        justify-content: center;
+        padding-top: 60px;
+    }
+    .why-section .why-content-bx .img-holder{
+        display: none;
+    }
+    .why-section .why-content-bx .text-bx{
+        width: 100%;
+    }
+    .download-section .download-form-bx form{
+        width: 100%;
+    }
+    .download-section .phone-mockup {
+        width: 60%;
+        margin-inline-start: 20%;
+    }
+    .footer-section .items-bx{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .car-card-item{
+        width: 90%;
+        margin-inline-start: auto;
+        margin-inline-end: auto;
+    }
+    .breadcrumb-bx{
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
+    .details-section .why-content-bx{
+        flex-direction: column;
+    }
+    .details-section .why-content-bx .img-holder{
+        width: 80%;
+        margin-bottom: 30px;
+    }
+    .details-section .why-content-bx .text-bx{
+        width: 100%;
+    }
+    .details-section{
+        background-image: none;
+    }
+}
