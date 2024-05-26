@@ -1,0 +1,34 @@
+/*--- How section ---*/
+.how-section{
+    padding: 50px 0;
+    .work-item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+        margin-bottom: 15px;
+        .icon-bx{
+            width: 112px;
+            height: 112px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 16px;
+            background-color: #ECF5FF;
+        }
+        .text-bx{
+            h4{
+                font-size: 18px;
+                text-align: center;
+                color: var(--main_black);
+                margin-bottom: 15px;
+            }
+            p{
+                font-size: 15px;
+                text-align: center;
+                color: #6D6D6D;
+            }
+        }
+    }
+}

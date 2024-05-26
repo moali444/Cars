@@ -1,0 +1,76 @@
+/*--- Download section ---*/
+.download-section{
+    width: 100%;
+    padding-top: 30px;
+    background-color: #fff;
+    background-image: url(../../../../assets/images/svg/download-section-bg.svg);
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: 40%;
+    &:lang(en){
+        background-position-x: left;
+    }
+    &:lang(ar){
+        background-position-x: right;
+    }
+    .section-header{
+        margin-bottom: 25px;
+        .text{
+            h3{
+                font-size: 36px;
+                font-weight: 600;
+                .colored{
+                    color: var(--main_blue_color);
+                }
+            }
+            p{
+                font-size: 14px;
+                color: var(--main_black);
+            }
+        }
+    }
+    .apps-bx{
+        display: inline-flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 40px;
+    }
+    .phone-mockup{
+        width: 80%;
+        margin-inline-start: 20%;
+        height: 100%;
+        display: flex;
+        align-items: end;
+        img{
+            width: 100%;
+            height: 450px;
+        }
+    }
+    .download-form-bx{
+        margin: 30px 0 50px;
+        form{
+            width: 60%;
+        }
+        .form-control{
+            height: 50px;
+            border-radius: 50px;
+            background-color: #CEDCFF;
+        }
+        .download-form-btn{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            button{
+                border-radius: 8px;
+                padding: 10px 35px;
+                background-color: var(--btn_bg);
+                &:hover{
+                    color: var(--main_blue_color);
+                    border-color: var(--main_blue_color);
+                    background-color: var(--btn_hover_bg_2);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,42 @@
+/*--- Popular section ---*/
+.popular-section{
+    padding-top: 30px;
+    .show-more{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 30px 0;
+        .more-btn{
+            color: var(--main_black);
+            padding: 12px 35px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            text-decoration: none;
+            margin-top: 20px;
+            border-radius: var(--btn_radius);
+            background-color: #fff;
+            border: 1px solid var(--border-color);
+            transition: 0.3s;
+            &:lang(ar){
+                font-weight: 600;
+            }
+            img{
+                filter: brightness(0) saturate(100%) invert(10%) sepia(8%) saturate(958%) hue-rotate(169deg) brightness(101%) contrast(90%);
+                &:lang(ar){
+                    transform: rotate(180deg);
+                }
+            }
+            &:hover{
+                color: var(--main_blue_color);
+                border-color: var(--main_blue_color);
+                background-color: var(--btn_hover_bg_2);
+                img{
+                    filter: brightness(0) saturate(100%) invert(37%) sepia(11%) saturate(6746%) hue-rotate(184deg) brightness(98%) contrast(102%);
+                }
+            }
+        }
+    }
+}

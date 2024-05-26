@@ -1,0 +1,107 @@
+/*--- Testimonials section ---*/
+.testimonials-section{
+    padding: 50px 0;
+    position: relative;
+    background-color: #F7FBFF;
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        inset-inline-end: 20%;
+        width: 150px;
+        height: 130px;
+        background-image: url(../../../../assets/images/svg/quotation-mark-1.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-x: right;
+    }
+    &::after{
+        content: '';
+        position: absolute;
+        top: 70px;
+        inset-inline-start: 21%;
+        width: 200px;
+        height: 180px;
+        background-image: url(../../../../assets/images/svg/quotation-mark-2.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position-x: right;
+        z-index: 3;
+    }
+    .testimonials-slider{
+        margin-top: 50px;
+        z-index: 99;
+        // .swiper-slide-active{
+        //     zoom: 1.2;
+        // }
+        .testimonial-item{
+            width: 94%;
+            border-radius: 24px;
+            display: flex;
+            margin-bottom: 15px;
+            margin-inline-start: 3%;
+            margin-inline-end: 3%;
+            box-shadow: 0px 3px 3px 2px rgba(19,94,172,0.12);
+            -webkit-box-shadow: 0px 3px 3px 2px rgba(19,94,172,0.12);
+            -moz-box-shadow: 0px 3px 3px 2px rgba(19,94,172,0.12);
+            .item-img{
+                width: 40%;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    &:lang(en){
+                        border-radius: 24px 0 0 24px;
+                    }
+                    &:lang(ar){
+                        border-radius: 0 24px 24px 0;
+                    }
+                }
+            }
+            .item-text{
+                width: 60%;
+                padding: 15px 20px;
+                display: flex;
+                flex-direction: column;
+                border-radius: 24px;
+                background-color: #fff;
+                z-index: 99;
+                .top-header{
+                    display: flex;
+                    gap: 5px;
+                    align-items: baseline;
+                    .num{
+                        color: var(--main_black);
+                        font-weight: 600;
+                        font-size: 36px;
+                    }
+                    .text{
+                        font-size: 16px;
+                        color: var(--main_black);
+                    }
+                }
+                .stars-bx{
+                    display: flex;
+                    gap: 2px;
+                }
+                .testimonial-text{
+                    padding: 30px 0;
+                    font-size: 14px;
+                    color: var(--main_black);
+                }
+                .user-info{
+                    .name{
+                        font-size: 16px;
+                        font-weight: 600;
+                        color: var(--main_black);
+                        margin-bottom: 0px;
+                    }
+                    .location{
+                        font-size: 14px;
+                        color: #838383;
+                    }
+                }
+            }
+        }
+    }
+}
